@@ -13,7 +13,7 @@
 	scanf("%f", & prova2);
 	
 	media = ((prova1 + prova2)/2);
-	printf("\nMédia aritmética: %.2f", media);
+	printf("\nMï¿½dia aritmï¿½tica: %.2f", media);
 	printf("\nNota 1: %.2f Nota 2: %.2f", prova1, prova2);
 	
 	if (media >= 5) printf("\nAprovado!");
@@ -27,7 +27,7 @@
 	float altura, peso;
 	int genero;
 	
-	printf("Você é homem ou mulher (1/2)? ");
+	printf("Vocï¿½ ï¿½ homem ou mulher (1/2)? ");
 	scanf("%d", & genero);
 	
 	printf("\nDigite sua altura em metros: ");
@@ -51,20 +51,17 @@
 int main() {
 	setlocale(LC_ALL, "Portuguese");
 	int numero;
-	printf("Digite um número: ");
+	printf("Digite um nÃºmero: ");
 	scanf("%d", &numero);
 	
-	if (numero>0) printf("\nNúmero positivo");
+	if (numero>0) printf("\nNÃºmero positivo");
 	
-	else if (numero<0) printf("\nNúmero negativo");
+	else if (numero<0) printf("\nNÃºmero negativo");
 	
 	else printf("\nNulo.");
-		 
+
+	return 0; 
 }
-
-
-
-
 
 
 
