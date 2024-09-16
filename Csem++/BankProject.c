@@ -53,20 +53,36 @@ int main() {
 
         account1.money = 0;
 
-        pritnf("\nPossible actions: ");
+        printf("\nPossible actions: ");
 
-        char action[30];
-        printf("\nConsult account information - Depoist - Withdraw - Delete account - Change credentials");
-        scanf("%c", action);
+        int wantToAct = 1;
 
-        switch (action)
-        {
-        case "Consult":
-            /* code */
-            break;
-        
-        default:
-            break;
+        while (wantToAct = 1) {
+            char action[30];
+            printf("\nConsult account information - Depoist - Withdraw - Delete account - Change credentials - Exit");
+            scanf("%c", action);
+
+            if (action == "Consult" || action == "consult") {
+                printf("You selected consult");
+            } 
+            else if (action == "Deposit" || action == "deposit") {
+                printf("You selected deposit");
+            }
+            else if (action == "Withdraw" || action == "withdraw") {
+                printf("You selected withdraw");
+            }
+            else if (action == "Delete" || action == "delete") {
+                printf("You selected delete");
+            }
+            else if (action == "Change" || action == "change") {
+                printf("You selected change credentials");
+            }
+            if (action == "Exit" || action == "exit") {
+                printf("You selected exit");
+                wantToAct -= 1;
+            }
+            else printf("Action not recognized.");
+
         }
 
 
