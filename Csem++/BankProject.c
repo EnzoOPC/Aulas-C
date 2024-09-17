@@ -42,7 +42,6 @@ int main() {
     char createAccount;  
 
     printf("Hello, would you like to crete a account in our bank (y/n)? ");
-    fflush(stdin);
     scanf("%c", createAccount);
 
     if (createAccount == 'y' || createAccount == 'Y') {
